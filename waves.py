@@ -16,7 +16,7 @@ def access_data(selected_option):
             "Santos/SP":"Santos.csv",
             "Tramandai/RS":"Tramandai.csv"}
 
-    path = "D:\All\Projetos\Streamlit waves\\"+files[selected_option]
+    path = "https://raw.githubusercontent.com/guerchen/WaveEnergy/main/"+files[selected_option]
     return pd.read_csv(path)
 
 def format_date(dataframe_to_format):
